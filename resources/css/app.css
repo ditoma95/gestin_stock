@@ -1,0 +1,109 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+/* **************************login**************************** */
+.champs_input{
+    @apply block rounded-lg px-2.5 pb-2.5 pt-5 w-full text-sm
+    text-white bg-gray-50 dark:bg-gray-700 border-0
+    border-gray-300 appearance-none dark:text-white
+      focus:outline-none focus:ring-0
+    focus:border-blue-600 text-center
+
+}
+.champs_label {
+    @apply absolute text-lg text-white
+    dark:text-white duration-300
+      transform -translate-y-4 scale-75 top-3 z-10
+      origin-[0] left-2.5 peer-focus:text-white
+    peer-focus:dark:text-white peer-placeholder-shown:scale-100
+    peer-placeholder-shown:translate-y-0 peer-focus:scale-75
+    peer-focus:-translate-y-4 font-bold italic
+}
+/* **************************image de fond *********************** */
+
+/* body{
+    background: url(/public/images/image1.jpg) no-repeat fixed center/cover;
+} */
+
+
+/* *******************************Bouton afficher***************************** */
+.creation{
+    @apply bg-gray-300 p-4 rounded-lg shadow-2xl
+}
+.bouttonAfficher{
+    @apply text-white bg-gradient-to-r from-blue-500 via-blue-600 to-blue-700
+    hover:bg-gradient-to-br focus:ring-4 focus:outline-none focus:ring-blue-300
+    dark:focus:ring-blue-800 shadow-lg shadow-blue-500/50 dark:shadow-lg
+     dark:shadow-blue-800/80 font-medium rounded-lg text-sm
+     px-5 py-2.5 text-center mr-2 mb-6 w-40
+}
+
+.groupe{
+    @apply grid mb-3
+}
+.groupe input{
+@apply rounded-lg
+}
+
+.horizontal-row{
+    @apply bg-gray-600 h-1
+}
+
+.box{
+    @apply flex gap-4 items-center flex-wrap
+}
+
+
+/* ***********************************boites employees *********************************** */
+.boites{
+    @apply flex gap-6 flex-wrap
+}
+.boite{
+    @apply border-2 border-blue-500 w-72 rounded-lg p-4 mb-4 bg-blue-300
+}
+.enfant1{
+    @apply flex justify-between
+}
+.enf1{
+    @apply bg-white rounded-lg p-2 flex items-center
+}
+.enf1 .iconnes{
+    @apply mr-2
+}
+.enfant2{
+    @apply bg-white rounded-lg p-2 mt-2 text-center flex items-center
+}
+.enfant2 small{
+    @apply mr-2
+}
+
+.enfant3{
+    @apply flex justify-between mt-3
+}
+.editer a, .suppr a{
+    @apply flex items-center rounded-lg cursor-pointer
+}
+.editer a{
+    @apply bg-green-500 rounded-lg p-2 text-white font-bold items-center cursor-pointer
+}
+
+.suppr a{
+    @apply bg-red-500 rounded-lg p-2 text-white font-bold items-center cursor-pointer
+}
+
+.enfant1, .enfant2, .enfant3, .textes{
+    @apply flex-wrap
+}
+
+.groupe textarea{
+    @apply bg-blue-300 outline-none border-0 rounded-lg h-2
+}
+/* **********************************details******************************** */
+.det{
+    @apply mb-2 ml-4
+}
+.det .deroule{
+    @apply py-1 hover:bg-blue-600 rounded-lg p-1 cursor-pointer
+}
